@@ -2636,6 +2636,7 @@ struct tlsh_state {
 struct tlsh_state * tlsh_alloc() {
     struct tlsh_state * state = malloc(sizeof(struct tlsh_state));
     memset(state, 0, sizeof(struct tlsh_state));
+    return state;
 }
 
 void tlsh_free(struct tlsh_state * state) {
